@@ -19,7 +19,7 @@ namespace GitMethods
             j = Convert.ToInt32(Console.ReadLine());
         }
 
-        public void MaxNumber()
+        public void MaxNumber() // Show max number method
         {
             if (i > j)
             {
@@ -33,7 +33,7 @@ namespace GitMethods
             }
         }
 
-        public void MinNumber()
+        public void MinNumber() // Show min number method
         {
             if (i < j)
             {
@@ -55,9 +55,11 @@ namespace GitMethods
             Program getNumber = new Program();
             getNumber.AccpetDetails();
 
+            // Show the max number
             Console.WriteLine("Please show max number!");
             getNumber.MaxNumber();
 
+            // show the min number
             Console.WriteLine("Please show min number!");
             getNumber.MinNumber();
         }
