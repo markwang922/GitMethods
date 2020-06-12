@@ -8,17 +8,18 @@ namespace GitMethods
 {
     class Program
     {
-        int i, j;
+        internal int i, j;
 
-        private void AccpetDetails()
+        public void AccpetDetails()
         {
             //input numbers
-            Console.WriteLine("Please enter 2 number:");
+            Console.WriteLine("Please enter 1 number:");
             i = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Please enter another number");
             j = Convert.ToInt32(Console.ReadLine());
         }
 
-        private void MaxNumber()
+        public void MaxNumber()
         {
             if (i > j)
             {
@@ -32,7 +33,7 @@ namespace GitMethods
             }
         }
 
-        private void MinNumber()
+        public void MinNumber()
         {
             if (i < j)
             {
@@ -45,9 +46,20 @@ namespace GitMethods
                 Console.ReadLine();
             }
         }
+    }
+
+    class GetNumber
+    { 
         static void Main(string[] args)
         {
+            Program getNumber = new Program();
+            getNumber.AccpetDetails();
 
+            Console.WriteLine("Please show max number!");
+            getNumber.MaxNumber();
+
+            Console.WriteLine("Please show min number!");
+            getNumber.MinNumber();
         }
     }
 }
